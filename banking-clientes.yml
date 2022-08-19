@@ -4,7 +4,7 @@ server:
 # My SQL #
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/banking?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
     username: root
     password: VaxiDrez2005$
     driverClassName: com.mysql.cj.jdbc.Driver
