@@ -1,0 +1,24 @@
+server:
+  port: 8883
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://rcoronado:rcoronado@cluster0.pjt8oa9.mongodb.net/ahorros?retryWrites=true&w=majority      
+#      database: ahorros
+#      database: CuentasAhorros
+#      username: vaxidrez
+#      password: VaxiDrez2005$
+#      host: localhost
+      port: 27017    
+#      authentication-database: admin  
+      
+#  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+      
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
