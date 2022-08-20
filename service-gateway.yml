@@ -23,10 +23,10 @@ spring:
           enabled: true           
           lowerCaseServiceId: true
       routes:
-#      - id: id-ms-gestion-productos
-#        uri: lb://MS-GESTION-PRODUCTOS
-#        predicates:
-#        - Path=/ms-productos/**
+        - id: banking-clientes
+          uri: lb://banking-clientes
+          predicates:
+            - Path=/api/clientes/**
 #        filters:
 #        - RewritePath=/ms-productos/(?<path>.*), /$\{path}
         
