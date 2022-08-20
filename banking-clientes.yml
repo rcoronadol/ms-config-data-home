@@ -4,14 +4,14 @@ server:
 # My SQL #
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
+    url: jdbc:mysql://35.225.177.212:3306/banking?createDatabaseIfNotExist=true
     username: root
-    password: VaxiDrez2005$
+    password: Inside
     driverClassName: com.mysql.cj.jdbc.Driver
 
 #jdbc:mysql://localhost:3306/MS_02_2022_CLIENTES?serverTimezone=GMT-6
 #jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
-#
+#VaxiDrez2005$
 # Hibernate
   jpa:
     hibernate:
