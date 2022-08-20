@@ -1,8 +1,9 @@
 #Server
 server:
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 8884
+#  port: ${PORT:${SERVER_PORT:0}}
 
-#  port: 8884
+#
     
 # My SQL #
 spring:
@@ -45,8 +46,8 @@ eureka:
 #      service-url:
          defaultZone: http://localhost:8889/eureka
 #         default-zone: http://localhost:8889/eureka
-   instance:
-      instance-id:${spring.application.name}:${spring.application.instance_id:${random.value}}
+#   instance:
+#      instance-id:${spring.application.name}:${spring.application.instance_id:${random.value}}
            
 
 
