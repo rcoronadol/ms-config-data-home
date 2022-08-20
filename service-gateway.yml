@@ -1,16 +1,16 @@
 # Sever
 server:
-  port: ${PORT:${SERVER_PORT:0}}
+  port: 8891
 
 # Registry Client
 eureka:
    client:
       fetch-registry: true
       register-with-eureka: true
-#      serviceUrl:
-      service-url:
-#         defaultZone: http://localhost:8889/eureka
-         default-zone: http://localhost:8889/eureka
+      serviceUrl:
+#      service-url:
+         defaultZone: http://localhost:8889/eureka
+#         default-zone: http://localhost:8889/eureka
    instance:
       instance-id:${spring.application.name}:${spring.application.instance_id:${random.value}}
            
