@@ -26,7 +26,7 @@ spring:
         - id: banking-clientes
           uri: lb://banking-clientes
           predicates:
-            - Path=/api/clientes/**
+            - Path=/api/restclientes/**
 #        filters:
 #        - RewritePath=/ms-productos/(?<path>.*), /$\{path}
         
