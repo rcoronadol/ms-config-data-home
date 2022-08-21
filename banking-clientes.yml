@@ -8,9 +8,11 @@ server:
 # My SQL #
 spring:
   datasource:
-    url: jdbc:mysql://35.225.177.212:3306/banking?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
+#    jdbc:mysql://35.225.177.212:3306/banking?createDatabaseIfNotExist=true
     username: root
-    password: Inside
+    password: VaxiDrez2005$
+#    Inside
     driverClassName: com.mysql.cj.jdbc.Driver
 
 #jdbc:mysql://localhost:3306/MS_02_2022_CLIENTES?serverTimezone=GMT-6
