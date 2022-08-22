@@ -1,15 +1,16 @@
 
 server:
-  port: 8085
+  port: 8885
     
 # MongoDB #
 spring:
    data:
       mongodb:
-         database: MS_02_2022_PEDIDOS_QUERY
+         uri: mongodb+srv://rcoronado:rcoronado@cluster0.pjt8oa9.mongodb.net/cliente?retryWrites=true&w=majority
+         database: Persona
 #        username:
 #        password:
-         host: localhost
+#         host: localhost
          port: 27017
 
 # Registry Client
