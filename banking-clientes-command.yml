@@ -7,7 +7,7 @@ spring:
    data:
       mongodb:
          uri: mongodb+srv://rcoronado:rcoronado@cluster0.pjt8oa9.mongodb.net/cliente?retryWrites=true&w=majority
-         database: Persona
+#         database: Persona
 #        username:
 #        password:
 #         host: localhost
