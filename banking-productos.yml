@@ -24,7 +24,7 @@ spring:
     url: jdbc:postgresql://35.199.98.199:5432/db_productos?createDatabaseIfNotExist=true
     username: postgres
     password: bdpostgreroot
-    driver-class-name: org.postgresql.Driver
+    driverClassName: org.postgresql.Driver
   jpa:
     properties:
       hibernate:
