@@ -1,15 +1,26 @@
 server:
-  port: 8884
+  port: 8882
     
 # My SQL #
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
-    username: root
-    password: VaxiDrez2005$
-    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://35.199.98.199:5432/db_productos?createDatabaseIfNotExist=true
+    username: postgres
+    password: bdpostgreroot
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update    
 
 #jdbc:mysql://localhost:3306/MS_02_2022_CLIENTES?serverTimezone=GMT-6
+#url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
+#    username: root
+#    password: VaxiDrez2005$
+#    driverClassName: com.mysql.cj.jdbc.Driver
+
 
 # Hibernate
   jpa:
