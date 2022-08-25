@@ -1,25 +1,8 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
     
-# My SQL #
+# Base Datos #
 spring:
-#  datasource:    
-#    url: jdbc:mysql://35.225.177.212:3306/banking?createDatabaseIfNotExist=true
-#    username: root
-#    password: Inside
-#    driverClassName: com.mysql.cj.jdbc.Driver
-
-##jdbc:mysql://localhost:3306/MS_02_2022_CLIENTES?serverTimezone=GMT-6
-##jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
-##VaxiDrez2005$
-## Hibernate
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: true
-#    generate-ddl: true
-
-
   datasource:
     url: jdbc:postgresql://35.199.98.199:5432/db_productos?createDatabaseIfNotExist=true
     username: postgres
@@ -30,7 +13,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         hbm2ddl:
-          auto: update    
+          auto: update 
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true   
 
 #jdbc:mysql://localhost:3306/MS_02_2022_CLIENTES?serverTimezone=GMT-6
 #url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
