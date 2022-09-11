@@ -4,7 +4,7 @@ server:
 # Base Datos #
 spring:
   datasource:
-    url: jdbc:postgresql://35.199.98.199:5432/db_productos?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://35.199.98.199/db_productos?createDatabaseIfNotExist=true
     username: postgres
     password: bdpostgreroot
     driverClassName: org.postgresql.Driver
