@@ -39,7 +39,7 @@ eureka:
       register-with-eureka: true
       serviceUrl:
 #      service-url:
-         defaultZone: https://service-discovery-vmzrdepsva-uc.a.run.app
+         defaultZone: http://localhost:8889/eureka
 #         default-zone: http://localhost:8889/eureka
 #   instance:
 #      instance-id:${spring.application.name}:${spring.application.instance_id:${random.value}}
